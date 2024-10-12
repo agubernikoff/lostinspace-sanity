@@ -14,6 +14,10 @@ export const teamMemberType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'rank',
+      type: 'number',
+    }),
+    defineField({
       name: 'bio',
       type: 'array',
       of: [{type: 'block'}],

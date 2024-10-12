@@ -10,6 +10,10 @@ export const clientType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'rank',
+      type: 'number',
+    }),
+    defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
