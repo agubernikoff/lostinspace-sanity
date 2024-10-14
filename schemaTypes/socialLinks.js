@@ -5,10 +5,23 @@ export default {
     type: 'document',
     fields: [
       {
-        name: 'hiring',
-        title: 'Hiring?',
-        type: 'boolean',
+        title: 'Youtube',
+        name: 'youtube',
+        type: 'url',
       },
+      {
+        title: 'LinkedIn',
+        name: 'linkedin',
+        type: 'url',
+      },{
+        title: 'Instagram',
+        name: 'instagram',
+        type: 'url',
+      },{
+        title: 'Twitter',
+        name: 'twitter',
+        type: 'url',
+      }
     ],
   }
   
