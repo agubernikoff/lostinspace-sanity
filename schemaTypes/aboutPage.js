@@ -1,5 +1,7 @@
 // schemas/aboutPage.js
 
+import {defineField, defineType} from 'sanity'
+
 const aboutBullets = defineType({
     name: 'aboutBullets',
     title: 'About Bullets',
