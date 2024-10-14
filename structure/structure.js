@@ -21,7 +21,7 @@ export const structure = (S) =>
         ),S.listItem()
         .title('Footer Page')
         .child(
-          S.document().title('Footer Page').schemaType('footerPage').documentId('footerPage'),
+          S.document().title('Social Links').schemaType('footerPage').documentId('footerPage'),
         ),
       ...S.documentTypeListItems().filter(
         (listItem) => !['teamPage', 'servicesPage', 'aboutPage', 'footerPage'].includes(listItem.getId()),
