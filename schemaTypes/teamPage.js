@@ -1,7 +1,7 @@
-// schemas/siteSettings.js
+// schemas/teamPage.js
 export default {
-  name: 'siteSettings',
-  title: 'Site Settings',
+  name: 'teamPage',
+  title: 'Team Page',
   type: 'document',
   fields: [
     {

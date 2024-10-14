@@ -5,11 +5,25 @@ export const structure = (S) =>
     .title('Base')
     .items([
       S.listItem()
-        .title('Site Settings')
+        .title('Team Page')
         .child(
-          S.document().title('Site Settings').schemaType('siteSettings').documentId('siteSettings'),
+          S.document().title('Team Page').schemaType('teamPage').documentId('teamPage'),
+        ),
+        S.listItem()
+        .title('About Page')
+        .child(
+          S.document().title('About Page').schemaType('aboutPage').documentId('aboutPage'),
+        ),
+        S.listItem()
+        .title('Services Page')
+        .child(
+          S.document().title('Services Page').schemaType('servicesPage').documentId('servicesPage'),
+        ),S.listItem()
+        .title('Footer Page')
+        .child(
+          S.document().title('Footer Page').schemaType('footerPage').documentId('footerPage'),
         ),
       ...S.documentTypeListItems().filter(
-        (listItem) => !['siteSettings'].includes(listItem.getId()),
+        (listItem) => !['teamPage', 'servicesPage', 'aboutPage', 'footerPage'].includes(listItem.getId()),
       ),
     ])
