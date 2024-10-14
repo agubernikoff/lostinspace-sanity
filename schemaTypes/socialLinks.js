@@ -1,6 +1,6 @@
-// schemas/footerPage.js
+// schemas/socialLinks.js
 export default {
-    name: 'footerPage',
+    name: 'socialLinks',
     title: 'Social Links',
     type: 'document',
     fields: [
