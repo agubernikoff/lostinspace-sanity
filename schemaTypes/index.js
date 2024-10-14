@@ -1,8 +1,8 @@
-import {teamPage} from './teamPage'
+import teamPage from './teamPage'
 import {clientType} from './clientType'
 import {teamMemberType} from './teamMemberType'
-import {footerPage} from './footerPage'
-import {aboutPage} from './aboutPage'
-import {servicesPage} from './servicesPage'
+import footerPage from './footerPage'
+import aboutPage from './aboutPage'
+import servicesPage from './servicesPage'
 
 export const schemaTypes = [clientType, teamMemberType, teamPage, footerPage, aboutPage, servicesPage]
