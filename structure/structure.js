@@ -19,7 +19,7 @@ export const structure = (S) =>
         .child(
           S.document().title('Services Page').schemaType('servicesPage').documentId('servicesPage'),
         ),S.listItem()
-        .title('Footer Page')
+        .title('Social Links')
         .child(
           S.document().title('Social Links').schemaType('socialLinks').documentId('socialLinks'),
         ),
