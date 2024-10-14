@@ -28,4 +28,7 @@ export const teamMemberType = defineType({
       type: 'image',
     }),
   ],
+  initialValue: {
+    rank: 10,
+  },
 })
