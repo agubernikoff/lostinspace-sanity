@@ -1,4 +1,4 @@
-import teamPage from './siteSettings'
+import {teamPage} from './teamPage'
 import {clientType} from './clientType'
 import {teamMemberType} from './teamMemberType'
 import {footerPage} from './footerPage'
