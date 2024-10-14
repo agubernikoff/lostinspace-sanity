@@ -1,4 +1,7 @@
 // schemas/teamPage.js
+
+import {defineField, defineType} from 'sanity'
+
 export default {
   name: 'teamPage',
   title: 'Team Page',
