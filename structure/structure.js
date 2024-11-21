@@ -6,24 +6,27 @@ export const structure = (S) =>
     .items([
       S.listItem()
         .title('Team Page')
-        .child(
-          S.document().title('Team Page').schemaType('teamPage').documentId('teamPage'),
-        ),
-        S.listItem()
+        .child(S.document().title('Team Page').schemaType('teamPage').documentId('teamPage')),
+      S.listItem()
         .title('About Page')
-        .child(
-          S.document().title('About Page').schemaType('aboutPage').documentId('aboutPage'),
-        ),
-        S.listItem()
+        .child(S.document().title('About Page').schemaType('aboutPage').documentId('aboutPage')),
+      S.listItem()
         .title('Services Page')
         .child(
           S.document().title('Services Page').schemaType('servicesPage').documentId('servicesPage'),
-        ),S.listItem()
+        ),
+      S.listItem()
         .title('Social Links')
         .child(
           S.document().title('Social Links').schemaType('socialLinks').documentId('socialLinks'),
         ),
+      S.listItem()
+        .title('Home Page')
+        .child(S.document().title('Home Page').schemaType('homePage').documentId('homePage')),
       ...S.documentTypeListItems().filter(
-        (listItem) => !['teamPage', 'servicesPage', 'aboutPage', 'socialLinks'].includes(listItem.getId()),
+        (listItem) =>
+          !['teamPage', 'servicesPage', 'aboutPage', 'socialLinks', 'homePage'].includes(
+            listItem.getId(),
+          ),
       ),
     ])
