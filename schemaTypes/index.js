@@ -5,6 +5,7 @@ import socialLinks from './socialLinks'
 import aboutPage from './aboutPage'
 import servicesPage from './servicesPage'
 import homePage from './homePage'
+import header from './header'
 
 export const schemaTypes = [
   clientType,
@@ -14,4 +15,5 @@ export const schemaTypes = [
   aboutPage,
   servicesPage,
   homePage,
+  header,
 ]
