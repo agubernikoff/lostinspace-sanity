@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineField} from 'sanity'
 import header from './header'
 
 export default {
@@ -7,9 +7,9 @@ export default {
   type: 'document',
   fields: [
     defineField({
-      name: 'image',
+      name: 'hero_image',
       title: 'Hero Image',
-      type: 'image',
+      type: 'heroImage',
     }),
     defineField({
       name: 'header',
