@@ -10,6 +10,11 @@ export default defineType({
       title: 'Image',
       type: 'image',
     }),
-    defineField({name: 'width', type: 'number'}),
+    defineField({
+      name: 'width',
+      type: 'number',
+      description:
+        'Width as a percentage of the containing element. 100 would set the image to the full width of the page minus the margins.',
+    }),
   ],
 })
