@@ -18,16 +18,31 @@ export default {
       of: header.of, // Use the "of" from the imported header schema
     }),
     defineField({
+      name: 'subheader',
+      title: 'Main Subheading',
+      type: 'string',
+    }),
+    defineField({
       name: 'clients_header',
       title: 'Clients Header',
       type: 'array',
       of: header.of, // Reuse the same header configuration
     }),
     defineField({
+      name: 'client_subheader',
+      title: 'Clients Subheading',
+      type: 'string',
+    }),
+    defineField({
       name: 'contact_header',
       title: 'Contact Header',
       type: 'array',
       of: header.of, // Reuse the same header configuration
+    }),
+    defineField({
+      name: 'contact_subheader',
+      title: 'Contact Subheading',
+      type: 'string',
     }),
   ],
 }
