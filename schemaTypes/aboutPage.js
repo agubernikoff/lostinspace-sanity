@@ -1,6 +1,7 @@
 // schemas/aboutPage.js
 
 import {defineField, defineType} from 'sanity'
+import header from './header'
 
 const aboutBullets = defineType({
     name: 'aboutBullets',

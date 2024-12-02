@@ -1,6 +1,7 @@
 // schemas/teamPage.js
 
 import {defineField, defineType} from 'sanity'
+import header from './header'
 
 export default {
   name: 'teamPage',
