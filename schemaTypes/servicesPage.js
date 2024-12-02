@@ -1,6 +1,7 @@
 // schemas/servicesPage.js
 
 import {defineField, defineType} from 'sanity'
+import header from './header'
 
 export const TYPES = [
   {title: 'Editorial', value: 'editorial'},
@@ -48,6 +49,12 @@ export default {
   type: 'document',
   fields: [
     defineField({
+      name: 'primary_header',
+      title: 'Main Header',
+      type: 'array',
+      of: header.of, // Reuse the same header configuration
+    }),
+    defineField({
       name: 'services',
       title: 'Services',
       type: 'array',
@@ -63,6 +70,17 @@ export default {
           }
           return true
         }),
+    }),
+    defineField({
+      name: 'secondary_header',
+      title: 'Contact Header',
+      type: 'array',
+      of: header.of, // Reuse the same header configuration
+    }),
+    defineField({
+      name: 'subheader',
+      title: 'Bottom Section Subheader',
+      type: 'string',
     }),
     defineField({
       name: 'bottomSquares',
