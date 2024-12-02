@@ -7,9 +7,9 @@ export default {
   type: 'document',
   fields: [
     defineField({
-      name: 'hero_image',
+      name: 'image',
       title: 'Hero Image',
-      type: 'heroImage',
+      type: 'image',
     }),
     defineField({
       name: 'header',
