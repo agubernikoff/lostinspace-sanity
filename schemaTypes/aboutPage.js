@@ -18,6 +18,12 @@ export default {
     type: 'document',
     fields: [
         defineField({
+          name: 'primary_header',
+          title: 'Main Header',
+          type: 'array',
+          of: header.of, // Reuse the same header configuration
+        }),
+        defineField({
             name: 'aboutBulletsTopSection',
             title: 'About Bullets',
             type: 'array',
@@ -34,6 +40,12 @@ export default {
             name: 'image',
             title: 'About Image',
             type: 'image',
+          }),
+          defineField({
+            name: 'secondary_header',
+            title: 'Contact Header',
+            type: 'array',
+            of: header.of, // Reuse the same header configuration
           }),
           defineField({
             name: 'aboutBulletsBottomSection',
