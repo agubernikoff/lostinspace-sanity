@@ -18,5 +18,10 @@ export const clientType = defineType({
       title: 'Image',
       type: 'image',
     }),
+    defineField({
+      name: 'bio',
+      type: 'array',
+      of: [{type: 'block'}],
+    }),
   ],
 })

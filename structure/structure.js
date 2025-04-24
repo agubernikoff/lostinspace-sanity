@@ -28,6 +28,11 @@ export const structure = (S) =>
         .child(
           S.document().title('Social Links').schemaType('socialLinks').documentId('socialLinks'),
         ),
+      S.listItem()
+        .title('Partners Page')
+        .child(
+          S.document().title('Partners Page').schemaType('partnersPage').documentId('partnersPage'),
+        ),
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
@@ -37,6 +42,7 @@ export const structure = (S) =>
             'socialLinks',
             'homePage',
             'contactPage',
+            'partnersPage',
           ].includes(listItem.getId()),
       ),
     ])

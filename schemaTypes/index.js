@@ -7,6 +7,7 @@ import servicesPage from './servicesPage'
 import homePage from './homePage'
 import header from './header'
 import contactPage from './contactPage'
+import partnersPage from './partnersPage'
 
 export const schemaTypes = [
   clientType,
@@ -18,4 +19,5 @@ export const schemaTypes = [
   homePage,
   header,
   contactPage,
+  partnersPage,
 ]
